@@ -1,0 +1,41 @@
+# This is an example of yaml configuration file.
+# Please exchange the filled data to the information from your experiment.
+# Copy parts starting from sample_name for each sample in your sequencing run.
+
+# Specify parameres of the sequencing run
+run_data:
+  run_name: nanopore_01                     # Name of the sequencing run (Required)
+  run_date: YYYY-MM-DD HH:MM:SS             # Date of sequencing (Required)
+  sequencing_platform: Nanopore             # Sequencing platform name (Required)
+  sequencing_software: Soft                 # Sequencing software name (Required)
+  sequencing_software_version: v01          # Sequencing software version (Required)
+  author_name: My Name                      # Investigator name (Required)
+  run_description: Everything concerning your experimemnt # (Required)
+
+
+# Specify parameters for each sample
+samples:
+  - sample_name: sample01                   # Sample name (Required)
+    barcode_name: barcode01                 # Barcode name (Required)
+    library_kit: SLK-109                    # Library kit name (Required)
+    sampling_date: YYYY-MM-DD HH:MM:SS      # Date when sample was collected (Required)
+    mapping_tool: Minimap2                  # Sequence mapping software (Required)
+    mapping_tool_version: v01               # Sequence mapping software version (Required)
+    modification_calling_tool: Megalodon    # Modification calling tool (Required)
+    modification_calling_tool_version: v01  # Modification callinng tool version (Required)
+    modification_calling_model_name: Rario  # Modification calling model (Optional)
+    sample_description: Control             # Describe any parameters of your sample (Optional)
+    reference_genome: mm10                  # Choose from the list {} or give any other genome (Optional)
+
+  - sample_name: sample02                   # Sample name (Required)
+    barcode_name: barcode02                 # Barcode name (Required)
+    library_kit: SLK-109                    # Library kit name (Required)
+    sampling_date: YYYY-MM-DD HH:MM:SS      # Date when sample was collected (Required)
+    mapping_tool: Minimap2                  # Choose from the list {Megalodon, Nanopolish, ...} (Required)
+    mapping_tool_version: v01               # Sequence mapping software version (Required) 
+    modification_calling_tool: Megalodon    # Modification calling tool (Required)
+    modification_calling_tool_version: v01  # Modification calling tool version (Required)
+    modification_calling_model_name: Rario  # Modification calling model (Optional)
+    sample_description: Test                # Describe any parameters of your sample (Optional)
+    reference_genome: mm10                  # Choose from the list {} or give any other genome (Optional)
+

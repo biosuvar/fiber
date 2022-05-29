@@ -1,0 +1,17 @@
+Package: fiber
+Title: fiber
+Version: 0.0.1
+Description: Pipeline for processing DNA modifications from Nanopore sequencing.
+License: GPL (>=2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0),
+    data.table,
+    DBI,
+    RSQLite,
+    yaml,
+    Rsamtools
+NeedsCompilation: no
+Packaged: 2022-05-24
+RoxygenNote: 7.1.2
+LazyData: true
